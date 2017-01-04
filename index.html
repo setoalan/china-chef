@@ -10,6 +10,7 @@
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
   <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -18,37 +19,24 @@
   <![endif]-->
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"
-          aria-hidden="true"></span> Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Catering</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Order Online</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
   <header class="jumbotron">
     <div class="container">
       <div class="row row-header">
-        <div class="col-xs-12">
-          <h1>China Chef</h1>
-          <p>Let the food talk!</p>
+        <div class="col-xs-12 col-sm-4">
+          <div class="logo">
+            <h1 class="title">China Chef</h1>
+            <img class="logo-image" src="img/logo-image.png" />
+            <p>Let the food talk!</p>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg btn-block">Order Online</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block">Menu</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block">Catering</button>
+        </div>
+        <div class="col-xs-12 col-sm-8">
+          <img class="hero" src="img/hero.jpg" />
+          <div class="well">
+            <p>Lunch Buffet</p>
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,21 @@
+footer {
+  padding: 20px 0px;
+}
+
+.hero {
+  color: #fff;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.jumbotron {
+  background-color: #fff;
+}
+
+.logo {
+  background-color: #ddd;
+  height: 55vh;
+  padding: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
