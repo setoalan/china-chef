@@ -19,3 +19,8 @@ footer {
   margin-bottom: 10px;
   text-align: center;
 }
+
+.table-menu {
+  border: none;
+  margin-bottom: 0px;
+}
