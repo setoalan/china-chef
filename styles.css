@@ -2,6 +2,10 @@ footer {
   padding: 20px 0px;
 }
 
+td {
+  text-align: right;
+}
+
 .hero {
   color: #fff;
   padding-bottom: 20px;
