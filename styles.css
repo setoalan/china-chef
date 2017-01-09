@@ -14,14 +14,47 @@ td {
 
 .jumbotron {
   background-color: #fff;
+  padding-bottom: 0px;
 }
 
-.logo {
-  background-color: #ddd;
-  height: 55vh;
-  padding: 20px;
-  margin-bottom: 10px;
-  text-align: center;
+@media (min-width: 0px) {
+  .logo {
+    background-color: #111;
+    height: 275px;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    background-color: #444;
+    height: 250px;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo {
+    background-color: #777;
+    height: 325px;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    background-color: #aaa;
+    height: 475px;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }
 
 .table-menu {
