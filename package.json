@@ -1,6 +1,6 @@
 {
   "name": "china-chef",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Business website for China Chef in South Milwaukee, WI",
   "main": "index.html",
   "license": "MIT",
@@ -20,6 +20,7 @@
     "url": "https://github.com/setoalan/china-chef/issues"
   },
   "dependencies": {
+    "axios": "^0.16.0",
     "body-parser": "~1.17.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
@@ -34,7 +35,9 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",
+    "react-router": "^2.8.1",
     "redux": "^3.6.0",
+    "redux-promise": "^0.5.3",
     "serve-favicon": "~2.4.2"
   },
   "devDependencies": {
