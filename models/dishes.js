@@ -10,7 +10,9 @@ const dishSchema = new Schema({
   category: String,
   label: String,
   price: Currency,
-  description: String
+  description: String,
+  quantity: Number,
+  prizeSize: [Currency]
 });
 
 module.exports = mongoose.model('Dish', dishSchema);
