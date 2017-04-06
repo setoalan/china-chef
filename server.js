@@ -35,7 +35,7 @@ app.use((req, res, next) => {
 
 app.use('/api', index);
 
-mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASSWORD}@ds149700.mlab.com:49700/china-chef-sm`);
+mongoose.connect(process.env.DB_URL);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
