@@ -1,0 +1,42 @@
+body {
+  margin-top: 30px;
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 5px;
+  text-decoration: none !important;
+}
+
+footer {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.card {
+  height: 100%;
+}
+
+.btn-flex {
+  display: flex;
+  height: 50px;
+}
+
+.btn-flex button {
+  flex: 1 !important;
+}
+
+.img-div {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.info-div {
+  margin-bottom: 20px;
+}
