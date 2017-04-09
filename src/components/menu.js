@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import { fetchMenu } from '../actions/index';
+import Header from '../components/header';
 
 class Menu extends Component {
   componentWillMount() {
@@ -19,6 +20,7 @@ class Menu extends Component {
   render() {
     return (
       <div>
+        <Header />
         <ul>
           {this.renderMenu()}
         </ul>
