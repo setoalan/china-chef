@@ -6,13 +6,14 @@ require('mongoose-currency').loadType(mongoose);
 const Currency = mongoose.Types.Currency;
 
 const dishSchema = new Schema({
+  id: Number,
   name: String,
   category: String,
   label: String,
   price: Currency,
   description: String,
   quantity: Number,
-  prizeSize: [Currency]
+  priceSize: [Currency]
 });
 
 module.exports = mongoose.model('Dish', dishSchema);

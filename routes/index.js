@@ -15,13 +15,31 @@ router.get('/', (req, res, next) => {
   mongoCli.connect(dbUrl, (err, db) => {
     if (err) throw err;
 
+    let menu = {};
+
     const appetizerCollection = db.collection('appetizers');
     appetizerCollection.find({}).toArray((err, appetizers) => {
       if (err) throw err;
-      res.json(appetizers);
-    });
-  });
+      menu.appetizers = appetizers;
 
+      const soupCollection = db.collection('soups');
+      soupCollection.find({}).toArray((err, soups) => {
+        if (err) throw err;
+        menu.soups = soups;
+
+        const seafoodCollection = db.collection('seafoods');
+        seafoodCollection.find({}).toArray((err, seafoods) => {
+          if (err) throw err;
+          menu.seafoods = seafoods;
+
+          res.json(menu);
+        });
+
+      });
+
+    });
+
+  });
 });
 
 module.exports = router;
