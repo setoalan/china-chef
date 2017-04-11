@@ -11,20 +11,48 @@ class Menu extends Component {
     this.props.fetchMenu();
   }
 
+  renderTab(category) {
+    return (
+      <li className="nav-item">
+        {category === 'appetizers' && <a className="nav-link active" data-toggle="tab" href={'#' + category}>{category}</a>}
+        {category !== 'appetizers' && <a className="nav-link" data-toggle="tab" href={'#' + category}>{category}</a>}
+      </li>
+    );
+  }
+
+  renderTabPane(category) {
+    if (category === 'appetizers') {
+      return (
+        <div className="tab-pane fade active show" id={category}>
+          {this.renderCategory(category)}
+        </div>
+      );
+    } else {
+      return (
+        <div className="tab-pane fade" id={category}>
+          {this.renderCategory(category)}
+        </div>
+      );
+    }
+  }
+
   renderCategory(category) {
     return (
-      <div className="col-sm-12 col-md-6 col-lg-4">
-        <div className="card">
-          <h3 className="card-header">{category}</h3>
-          <div className="card-block">
-            <table className="table">
-              <tbody>
-                {this.renderDish(category)}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+      <table className="table">
+        {
+          category === 'soup' &&
+          <thead>
+            <tr>
+              <th></th>
+              <th>Small</th>
+              <th>Large</th>
+            </tr>
+          </thead>
+        }
+        <tbody>
+          {this.renderDish(category)}
+        </tbody>
+      </table>
     );
   }
 
@@ -33,9 +61,9 @@ class Menu extends Component {
       return (
         <tr key={dish._id}>
           <td>{dish.name}</td>
-          {category !== 'soups' && <td>${dish.price.toFixed(2)}</td>}
-          {category === 'soups' && <td>${dish.priceSize[0].toFixed(2)}</td>}
-          {category === 'soups' && <td>${dish.priceSize[1].toFixed(2)}</td>}
+          {category !== 'soup' && category !== 'combination_plate' && category !== 'lunch_special' && <td>${dish.price.toFixed(2)}</td>}
+          {category === 'soup' && <td>${dish.priceSize[0].toFixed(2)}</td>}
+          {category === 'soup' && <td>${dish.priceSize[1].toFixed(2)}</td>}
         </tr>
       );
     });
@@ -46,9 +74,44 @@ class Menu extends Component {
       <div>
         <Header />
         <div className="row">
-          {this.renderCategory('appetizers')}
-          {this.renderCategory('soups')}
-          {this.renderCategory('seafoods')}
+          <div className="col">
+            <div className="card text-center">
+              <div className="card-header">
+                <ul className="category nav nav-pills card-header-tabs">
+                  {this.renderTab('appetizers')}
+                  {this.renderTab('soup')}
+                  {this.renderTab('seafood')}
+                  {this.renderTab('beef')}
+                  {this.renderTab('lo_mein')}
+                  {this.renderTab('chicken')}
+                  {this.renderTab('pork')}
+                  {this.renderTab('vegetable')}
+                  {this.renderTab('fried_rice')}
+                  {this.renderTab('chop_suey')}
+                  {this.renderTab('egg_foo_young')}
+                  {this.renderTab('chefs_house_special')}
+                  {this.renderTab('combination_plate')}
+                  {this.renderTab('lunch_special')}
+                </ul>
+              </div>
+              <div className="tab-content">
+                {this.renderTabPane('appetizers')}
+                {this.renderTabPane('soup')}
+                {this.renderTabPane('seafood')}
+                {this.renderTabPane('beef')}
+                {this.renderTabPane('lo_mein')}
+                {this.renderTabPane('chicken')}
+                {this.renderTabPane('pork')}
+                {this.renderTabPane('vegetable')}
+                {this.renderTabPane('fried_rice')}
+                {this.renderTabPane('chop_suey')}
+                {this.renderTabPane('egg_foo_young')}
+                {this.renderTabPane('chefs_house_special')}
+                {this.renderTabPane('combination_plate')}
+                {this.renderTabPane('lunch_special')}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

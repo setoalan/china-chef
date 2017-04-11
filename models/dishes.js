@@ -12,7 +12,6 @@ const dishSchema = new Schema({
   label: String,
   price: Currency,
   description: String,
-  quantity: Number,
   priceSize: [Currency]
 });
 

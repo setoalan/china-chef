@@ -1,0 +1,21 @@
+td:first-child {
+  text-align: left;
+}
+
+td:not(:first-child) {
+  text-align: right;
+}
+
+th:not(:first-child) {
+  text-align: right;
+}
+
+.card {
+  margin-top: 15px;
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
