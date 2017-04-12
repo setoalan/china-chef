@@ -1,21 +1,33 @@
-td:first-child {
-  text-align: left;
-}
-
-td:not(:first-child) {
-  text-align: right;
-}
-
-th:not(:first-child) {
-  text-align: right;
-}
-
-.card {
-  margin-top: 15px;
-}
-
 .category {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0;
+}
+
+.menu {
+  margin: 15px 0 40px 0;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: left;
+}
+
+.menu-item > p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+
+  .menu-category {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu-item {
+    width: 50%;
+  }
+
 }
