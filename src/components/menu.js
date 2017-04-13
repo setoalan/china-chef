@@ -15,7 +15,7 @@ class Menu extends Component {
   renderTab(category) {
     return (
       <li className="nav-item">
-        <a className={"nav-link" + (category === 'appetizers' ? ' active' : '')} data-toggle="tab" href={'#' + category}>{category}</a>
+        <a className={"nav-link" + (category === 'appetizers' ? ' active' : '')} data-toggle="tab" href={'#' + category}>{category.replace(/_/g, ' ')}</a>
       </li>
     );
   }
@@ -23,33 +23,40 @@ class Menu extends Component {
   renderTabPane(category) {
     return (
       <div className={"tab-pane fade" + (category === 'appetizers' ? ' active show' : '')} id={category}>
-        {this.renderCategory(category)}
-      </div>
-    );
-  }
-
-  renderCategory(category) {
-    return (
-      <div className="menu-category">
-        {this.renderDish(category)}
+        <div className="menu-category">
+          {this.renderDish(category)}
+        </div>
       </div>
     );
   }
 
   renderDish(category) {
-    return this.props.menu[category].map((dish) => {
-      return (
-        <div className="menu-item">
-          <p>
-            {dish.name}<br />
-            <small>{dish.description}</small>
-          </p>
-          {category !== 'soup' && category !== 'combination_plate' && category !== 'lunch_special' && <p>${dish.price.toFixed(2)}</p>}
-          {category === 'soup' && <p>${dish.priceSize[0].toFixed(2)}</p>}
-          {category === 'soup' && <p>${dish.priceSize[1].toFixed(2)}</p>}
-        </div>
-      );
-    });
+    if (category !== 'combination_plate' && category !== 'lunch_special') {
+      return this.props.menu[category].map((dish) => {
+        return (
+          <div className="menu-item" key={dish.id}>
+            <p>
+              {dish.name}
+              {dish.description !== undefined && <span><br /><small>{dish.description}</small></span>}
+            </p>
+            {category !== 'soup' && <p>${dish.price.toFixed(2)}</p>}
+            {category === 'soup' && <p>${dish.priceSize[0].toFixed(2)} | ${dish.priceSize[1].toFixed(2)}</p>}
+          </div>
+        );
+      });
+    } else {
+      return this.props.menu[category].map((dish) => {
+        const dishCategory = dish.dish_id.match(/^[a-z]+/);
+        const foundDish = this.props.menu[dishCategory].find(dish => dish);
+
+        return (
+          <div className="menu-item" key={foundDish.id}>
+            <p>{foundDish.name}</p>
+          </div>
+        )
+
+      });
+    }
   }
 
   render() {
