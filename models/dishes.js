@@ -9,7 +9,7 @@ const dishSchema = new Schema({
   id: Number,
   name: String,
   category: String,
-  label: String,
+  spicy: Boolean,
   price: Currency,
   description: String,
   priceSize: [Currency]

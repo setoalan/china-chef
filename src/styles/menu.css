@@ -1,7 +1,17 @@
-.category {
+.category-tabs {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0;
+}
+
+.category-info {
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+}
+
+.category-info > * {
+  margin: 0;
 }
 
 .menu {
@@ -25,7 +35,7 @@
 
 @media (max-width: 768px) {
 
-  .category > li {
+  .category-tabs > li {
     width: 50%
   }
 

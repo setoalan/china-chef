@@ -8,14 +8,18 @@ import Footer from '../components/footer';
 import '../styles/menu.css';
 
 class Menu extends Component {
+
   componentWillMount() {
     this.props.fetchMenu();
   }
 
   renderTab(category) {
+    let categoryName = category.replace(/_/g, ' ');
+    categoryName = (category === 'chefs_house_special') ? categoryName.replace('fs', 'f\'s') : categoryName;
+
     return (
       <li className="nav-item">
-        <a className={"nav-link" + (category === 'appetizers' ? ' active' : '')} data-toggle="tab" href={'#' + category}>{category.replace(/_/g, ' ')}</a>
+        <a className={"nav-link" + (category === 'appetizers' ? ' active' : '')} data-toggle="tab" href={'#' + category}>{categoryName}</a>
       </li>
     );
   }
@@ -24,10 +28,39 @@ class Menu extends Component {
     return (
       <div className={"tab-pane fade" + (category === 'appetizers' ? ' active show' : '')} id={category}>
         <div className="menu-category">
+          {category !== 'appetizers' && category !== 'soup' && category !== 'lo_mein' && category !== 'fried_rice' && <div className="category-info">{this.renderCategoryInfo(category)}</div>}
           {this.renderDish(category)}
         </div>
       </div>
     );
+  }
+
+  renderCategoryInfo(category) {
+    switch (category) {
+    case 'chop_suey':
+      return (<h6>(Served w. choice of white rice or crispy noodles.)</h6>);
+    case 'combination_plate':
+      return (
+        <h6>
+          Small 7.95 &nbsp; Large 9.45<br />
+          <small>
+            (Served w. egg roll and fried rice.<br />
+            Lo mein dishes only w. egg roll only.)
+          </small>
+        </h6>
+      );
+    case 'lunch_special':
+      return (
+        <h6>
+          Monday - Friday: 11:00 am - 2:30 pm<br />
+          <small>
+            (Served w. egg roll and fried rice.)
+          </small>
+        </h6>
+      );
+    default:
+      return (<h6>(Served w. white rice.)</h6>)
+    }
   }
 
   renderDish(category) {
@@ -36,19 +69,19 @@ class Menu extends Component {
         return (
           <div className="menu-item" key={dish.id}>
             <p>
-              {dish.name}
+              {dish.name} {dish.spicy === true && <span>🌶</span>}
               {dish.description !== undefined && <span><br /><small>{dish.description}</small></span>}
             </p>
-            {category !== 'soup' && <p>${dish.price.toFixed(2)}</p>}
-            {category === 'soup' && <p>${dish.priceSize[0].toFixed(2)} | ${dish.priceSize[1].toFixed(2)}</p>}
+            {category !== 'soup' && <p>{dish.price.toFixed(2)}</p>}
+            {category === 'soup' && !dish.priceSize[1] && <p>{dish.priceSize[0].toFixed(2)}</p>}
+            {category === 'soup' && dish.priceSize[1] && <p>{dish.priceSize[1].toFixed(2)} &nbsp; {dish.priceSize[0].toFixed(2)}</p>}
           </div>
         );
       });
     } else {
       return this.props.menu[category].map((dish) => {
-        const dishCategory = dish.dish_id.match(/^[a-z]+/);
-        const foundDish = this.props.menu[dishCategory].find(dish => dish);
-
+        const dishCategory = dish.dish_id.match(/([a-z])\w+/g);
+        const foundDish = this.props.menu[dishCategory].find(dishItem => dishItem.id === dish.dish_id);
         return (
           <div className="menu-item" key={foundDish.id}>
             <p>{foundDish.name}</p>
@@ -68,7 +101,7 @@ class Menu extends Component {
             <div className="menu">
               <div className="card text-center">
                 <div className="card-header">
-                  <ul className="category nav nav-pills card-header-tabs">
+                  <ul className="category-tabs nav nav-pills card-header-tabs">
                     {this.renderTab('appetizers')}
                     {this.renderTab('soup')}
                     {this.renderTab('seafood')}
