@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
 import bg from '../assets/china-chef.jpg';
+import '../styles/home.css';
 
-class Info extends Component {
+class Home extends Component {
+
   render() {
     return (
       <div>
@@ -53,6 +55,7 @@ class Info extends Component {
       </div>
     );
   }
+
 }
 
-export default Info;
+export default Home;

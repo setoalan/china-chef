@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import { fetchMenu } from '../actions/index';
-import Header from '../components/header';
-import Footer from '../components/footer';
 
 import '../styles/menu.css';
 
@@ -19,7 +17,12 @@ class Menu extends Component {
 
     return (
       <li className="nav-item">
-        <a className={"nav-link" + (category === 'appetizers' ? ' active' : '')} data-toggle="tab" href={'#' + category}>{categoryName}</a>
+        <a
+          className={"nav-link" + (category === 'appetizers' ? ' active' : '')}
+          data-toggle="tab"
+          href={'#' + category}>
+          {categoryName}
+        </a>
       </li>
     );
   }
@@ -28,7 +31,13 @@ class Menu extends Component {
     return (
       <div className={"tab-pane fade" + (category === 'appetizers' ? ' active show' : '')} id={category}>
         <div className="menu-category">
-          {category !== 'appetizers' && category !== 'soup' && category !== 'lo_mein' && category !== 'fried_rice' && <div className="category-info">{this.renderCategoryInfo(category)}</div>}
+          {
+            category !== 'appetizers' &&
+            category !== 'soup' &&
+            category !== 'lo_mein' &&
+            category !== 'fried_rice' &&
+            <div className="category-info">{this.renderCategoryInfo(category)}</div>
+          }
           {this.renderDish(category)}
         </div>
       </div>
@@ -53,9 +62,7 @@ class Menu extends Component {
       return (
         <h6>
           Monday - Friday: 11:00 am - 2:30 pm<br />
-          <small>
-            (Served w. egg roll and fried rice.)
-          </small>
+          <small>(Served w. egg roll and fried rice.)</small>
         </h6>
       );
     default:
@@ -95,7 +102,6 @@ class Menu extends Component {
   render() {
     return (
       <div>
-        <Header />
         <div className="row">
           <div className="col">
             <div className="menu">
@@ -138,7 +144,6 @@ class Menu extends Component {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     );
   }

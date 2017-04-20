@@ -14,10 +14,6 @@
   margin: 0;
 }
 
-.menu {
-  margin: 15px 0 40px 0;
-}
-
 .menu-item {
   display: flex;
   justify-content: space-between;
