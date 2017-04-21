@@ -101,46 +101,42 @@ class Menu extends Component {
 
   render() {
     return (
-      <div>
-        <div className="row">
-          <div className="col">
-            <div className="menu">
-              <div className="card text-center">
-                <div className="card-header">
-                  <ul className="category-tabs nav nav-pills card-header-tabs">
-                    {this.renderTab('appetizers')}
-                    {this.renderTab('soup')}
-                    {this.renderTab('seafood')}
-                    {this.renderTab('beef')}
-                    {this.renderTab('lo_mein')}
-                    {this.renderTab('chicken')}
-                    {this.renderTab('pork')}
-                    {this.renderTab('vegetable')}
-                    {this.renderTab('fried_rice')}
-                    {this.renderTab('chop_suey')}
-                    {this.renderTab('egg_foo_young')}
-                    {this.renderTab('chefs_house_special')}
-                    {this.renderTab('combination_plate')}
-                    {this.renderTab('lunch_special')}
-                  </ul>
-                </div>
-                <div className="tab-content">
-                  {this.renderTabPane('appetizers')}
-                  {this.renderTabPane('soup')}
-                  {this.renderTabPane('seafood')}
-                  {this.renderTabPane('beef')}
-                  {this.renderTabPane('lo_mein')}
-                  {this.renderTabPane('chicken')}
-                  {this.renderTabPane('pork')}
-                  {this.renderTabPane('vegetable')}
-                  {this.renderTabPane('fried_rice')}
-                  {this.renderTabPane('chop_suey')}
-                  {this.renderTabPane('egg_foo_young')}
-                  {this.renderTabPane('chefs_house_special')}
-                  {this.renderTabPane('combination_plate')}
-                  {this.renderTabPane('lunch_special')}
-                </div>
-              </div>
+      <div className="row menu">
+        <div className="col">
+          <div className="card text-center">
+            <div className="card-header">
+              <ul className="category-tabs nav nav-pills card-header-tabs">
+                {this.renderTab('appetizers')}
+                {this.renderTab('soup')}
+                {this.renderTab('seafood')}
+                {this.renderTab('beef')}
+                {this.renderTab('lo_mein')}
+                {this.renderTab('chicken')}
+                {this.renderTab('pork')}
+                {this.renderTab('vegetable')}
+                {this.renderTab('fried_rice')}
+                {this.renderTab('chop_suey')}
+                {this.renderTab('egg_foo_young')}
+                {this.renderTab('chefs_house_special')}
+                {this.renderTab('combination_plate')}
+                {this.renderTab('lunch_special')}
+              </ul>
+            </div>
+            <div className="tab-content">
+              {this.renderTabPane('appetizers')}
+              {this.renderTabPane('soup')}
+              {this.renderTabPane('seafood')}
+              {this.renderTabPane('beef')}
+              {this.renderTabPane('lo_mein')}
+              {this.renderTabPane('chicken')}
+              {this.renderTabPane('pork')}
+              {this.renderTabPane('vegetable')}
+              {this.renderTabPane('fried_rice')}
+              {this.renderTabPane('chop_suey')}
+              {this.renderTabPane('egg_foo_young')}
+              {this.renderTabPane('chefs_house_special')}
+              {this.renderTabPane('combination_plate')}
+              {this.renderTabPane('lunch_special')}
             </div>
           </div>
         </div>

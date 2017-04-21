@@ -7,7 +7,7 @@ class Catering extends Component {
   render() {
     return (
       <div className="row catering">
-        <div className="col-sm-12">
+        <div className="col">
           <h5>We know you are busy, so let us do the cooking.</h5>
           <p>
             Save Time<br />

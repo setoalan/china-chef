@@ -7,10 +7,10 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div className="home">
         <div className="row">
-          <div className="img-div col-sm-12">
-            <img className="img-fluid" src={bg} alt="China Chef" />
+          <div className="col">
+            <img className="img-fluid bg" src={bg} alt="China Chef" />
           </div>
         </div>
         <div className="row">

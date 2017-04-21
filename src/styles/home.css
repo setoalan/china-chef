@@ -1,37 +1,14 @@
-body {
-  margin-top: 30px;
+.home {
   text-align: center;
 }
 
-a {
-  text-decoration: none !important;
-}
-
-footer {
-  margin-top: 15px;
-  margin-bottom: 30px;
-}
-
-.btn {
-  cursor: pointer;
+.bg {
+  max-width: 90%;
+  margin-bottom: 20px;
 }
 
 .card {
   height: 100%;
-}
-
-.btn-flex {
-  display: flex;
-  height: 50px;
-}
-
-.btn-flex Button {
-  flex: 1 !important;
-}
-
-.img-div {
-  width: 80%;
-  margin: 20px auto;
 }
 
 .info-div {

@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
 import App from './containers/app';
-import Home from './containers/home';
+import Home from './components/home';
 import Menu from './components/menu';
 import Catering from './components/catering';
 
