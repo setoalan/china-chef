@@ -1,0 +1,33 @@
+a:hover {
+  text-decoration: none;
+}
+
+.header {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.info {
+  margin: 0;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn-flex {
+  display: flex;
+  height: 50px;
+}
+
+.btn-flex > * {
+  flex: 1 !important;
+}
+
+@media (max-width: 768px) {
+
+  .header > * {
+    padding: 0;
+  }
+
+}
