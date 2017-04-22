@@ -18,7 +18,7 @@ class Menu extends Component {
     return (
       <li className="nav-item">
         <a
-          className={"nav-link" + (category === 'appetizers' ? ' active' : '')}
+          className={'nav-link' + (category === 'appetizers' ? ' active' : '')}
           data-toggle="tab"
           href={'#' + category}>
           {categoryName}
@@ -29,7 +29,7 @@ class Menu extends Component {
 
   renderTabPane(category) {
     return (
-      <div className={"tab-pane fade" + (category === 'appetizers' ? ' active show' : '')} id={category}>
+      <div className={'tab-pane fade' + (category === 'appetizers' ? ' active show' : '')} id={category}>
         <div className="menu-category">
           {
             category !== 'appetizers' &&

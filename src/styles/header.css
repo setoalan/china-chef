@@ -1,6 +1,14 @@
+a:hover {
+  text-decoration: none;
+}
+
 .header {
   margin: 20px 0;
   text-align: center;
+}
+
+.info {
+  margin: 0;
 }
 
 .btn {

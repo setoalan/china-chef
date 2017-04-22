@@ -24,24 +24,25 @@ class Header extends Component {
     return (
       <div className="row header">
         <div className="col">
-          <h1><Link to={"/"}>China Chef</Link></h1>
-          <p>
+          <h1><Link to={'/'}>China Chef</Link></h1>
+          <p className="info">
             1224 Milwaukee Ave<br />
             South Milwaukee, WI 53172<br />
-          <a href="tel:4147641966">414.764.1966</a> • <a href="tel:4147642148">414.764.2148</a>
+            <a href="tel:4147641966">414.764.1966</a> • <a href="tel:4147642148">414.764.2148</a>
           </p>
+          <h3>Let the food talk!</h3>
           <div className="btn-group btn-flex" role="group" aria-label="header">
             <LinkContainer to={'/menu'}>
               <button
                 type="button"
-                className={"btn btn-outline-danger" + this.isActivePath('/menu')}>
+                className={'btn btn-outline-danger' + this.isActivePath('/menu')}>
                 Menu
               </button>
             </LinkContainer>
             <LinkContainer to={'/catering'}>
               <button
                 type="button"
-                className={"btn btn-outline-danger" + this.isActivePath('/catering')}>
+                className={'btn btn-outline-danger' + this.isActivePath('/catering')}>
                 Catering
               </button>
             </LinkContainer>

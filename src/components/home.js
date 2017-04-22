@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import bg from '../assets/china-chef.jpg';
+import bg from '../../public/assets/china-chef.jpg';
 import '../styles/home.css';
 
 class Home extends Component {
@@ -8,6 +8,13 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
+        <div className="row" style={{'display':'none'}}>
+          <div className="col">
+            <div className="alert alert-danger" role="alert">
+              <strong>Special Event</strong>
+            </div>
+          </div>
+        </div>
         <div className="row">
           <div className="col">
             <img className="img-fluid bg" src={bg} alt="China Chef" />
@@ -41,12 +48,12 @@ class Home extends Component {
           <div className="col-lg-4 info-div">
             <div className="card">
               <div className="card-block">
-                <h3 className="card-title">Delivery</h3>
+                <h3 className="card-title">We Deliver</h3>
                 <p className="card-text">
                   South Milwaukee<br />
                   Oak Creek<br />
                   Cudahy<br />
-                  *$15 minimum order
+                  <small>*$15 minimum order</small>
                 </p>
               </div>
             </div>
