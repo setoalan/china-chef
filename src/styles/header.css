@@ -1,5 +1,10 @@
-a:hover {
-  text-decoration: none;
+@font-face {
+  font-family: 'China One';
+  src: url(../../public/assets/ChinaOne.ttf);
+}
+
+a {
+  text-decoration: none !important;
 }
 
 .header {
@@ -7,12 +12,14 @@ a:hover {
   text-align: center;
 }
 
-.info {
-  margin: 0;
+.title {
+  font-size: 5rem;
+  font-family: 'China One', Arial, sans-serif;
 }
 
 .btn {
   cursor: pointer;
+  font-family: 'Lora', serif;
 }
 
 .btn-flex {

@@ -47,7 +47,7 @@ class Menu extends Component {
   renderCategoryInfo(category) {
     switch (category) {
     case 'chop_suey':
-      return (<h6>(Served w. choice of white rice or crispy noodles.)</h6>);
+      return <h6>(Served w. choice of white rice or crispy noodles.)</h6>;
     case 'combination_plate':
       return (
         <h6>
@@ -66,7 +66,7 @@ class Menu extends Component {
         </h6>
       );
     default:
-      return (<h6>(Served w. white rice.)</h6>)
+      return <h6>(Served w. white rice.)</h6>
     }
   }
 
