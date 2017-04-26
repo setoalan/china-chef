@@ -21,16 +21,10 @@ class Header extends Component {
   }
 
   render() {
+    return null;
     return (
       <div className="row header">
         <div className="col">
-          <h1 className="title"><Link to={'/'}>CHINA CHEF</Link></h1>
-          <h4>
-            1224 Milwaukee Ave<br />
-            South Milwaukee, WI 53172<br />
-            <a href="tel:4147641966">414.764.1966</a> • <a href="tel:4147642148">414.764.2148</a>
-          </h4>
-          <h2>Let the food talk!</h2>
           <div className="btn-group btn-flex" role="group" aria-label="header">
             <LinkContainer to={'/menu'}>
               <button

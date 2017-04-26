@@ -1,16 +1,38 @@
-.home {
-  text-align: center;
-}
-
-.bg {
-  max-width: 90%;
-  margin-bottom: 20px;
+@font-face {
+  font-family: 'China One';
+  src: url(../../public/assets/ChinaOne.ttf);
 }
 
 .card {
+  font-weight: bold;
   height: 100%;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-shadow: 0 0 5px #000000;
+}
+
+.info {
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+.info > a {
+  text-decoration: none !important;
+  color: #ffffff;
 }
 
 .info-div {
   margin-bottom: 20px;
+}
+
+.slogan {
+  color: #d9534f;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+.title {
+  font-family: 'China One', Arial, sans-serif;
+  font-size: 5rem;
+  color: #d9534f;
+  text-shadow: 2px 2px 5px #000000;
 }

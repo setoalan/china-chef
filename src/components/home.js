@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import bg from '../../public/assets/china-chef.jpg';
 import '../styles/home.css';
 
 class Home extends Component {
@@ -17,7 +16,13 @@ class Home extends Component {
         </div>
         <div className="row">
           <div className="col">
-            <img className="img-fluid bg" src={bg} alt="China Chef" />
+            <h1 className="title">CHINA CHEF</h1>
+            <h4 className="info">
+              1224 Milwaukee Ave<br />
+              South Milwaukee, WI 53172<br />
+              <a href="tel:4147641966">414.764.1966</a> • <a href="tel:4147642148">414.764.2148</a>
+            </h4>
+            <h2 className="slogan">Let the food talk!</h2>
           </div>
         </div>
         <div className="row">
