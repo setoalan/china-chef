@@ -21,10 +21,17 @@ class Header extends Component {
   }
 
   render() {
-    return null;
     return (
-      <div className="row header">
-        <div className="col">
+      <nav>
+        <ul className="nav nav-buttons">
+          <li className="active"><Link to={'/'}>HOME</Link></li>
+          <li><Link to={'/menu'}>MENU</Link></li>
+          <li><Link to={'/catering'}>CATERING</Link></li>
+          <li><a href="http://chef.chinesemenu.com" target="_blank">ONLINE ORDER</a></li>
+        </ul>
+      </nav>
+    );
+    return (
           <div className="btn-group btn-flex" role="group" aria-label="header">
             <LinkContainer to={'/menu'}>
               <button
@@ -46,8 +53,6 @@ class Header extends Component {
               ORDER ONLINE
             </button>
           </div>
-        </div>
-      </div>
     );
   }
 

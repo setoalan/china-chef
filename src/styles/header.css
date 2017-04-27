@@ -1,0 +1,17 @@
+.nav {
+  position: absolute;
+  top: 25px;
+  right: 0;
+}
+
+.nav-buttons > li + li {
+  margin-left: 30px;
+}
+
+.nav-buttons > li > a {
+  text-decoration: none !important;
+  padding-right: 0;
+  padding-left: 0;
+  color: #ffffff;
+  border-bottom: 2px solid red;
+}
