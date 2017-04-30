@@ -22,34 +22,37 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="row header">
-        <div className="col">
-          <h1><Link to={'/'}>China Chef</Link></h1>
-          <p className="info">
-            1224 Milwaukee Ave<br />
-            South Milwaukee, WI 53172<br />
-            <a href="tel:4147641966">414.764.1966</a> • <a href="tel:4147642148">414.764.2148</a>
-          </p>
-          <h3>Let the food talk!</h3>
+      <nav>
+        <ul className="nav nav-buttons">
+          <li className="active"><Link to={'/'}>HOME</Link></li>
+          <li><Link to={'/menu'}>MENU</Link></li>
+          <li><Link to={'/catering'}>CATERING</Link></li>
+          <li><a href="http://chef.chinesemenu.com" target="_blank">ONLINE ORDER</a></li>
+        </ul>
+      </nav>
+    );
+    return (
           <div className="btn-group btn-flex" role="group" aria-label="header">
             <LinkContainer to={'/menu'}>
               <button
                 type="button"
                 className={'btn btn-outline-danger' + this.isActivePath('/menu')}>
-                Menu
+                MENU
               </button>
             </LinkContainer>
             <LinkContainer to={'/catering'}>
               <button
                 type="button"
                 className={'btn btn-outline-danger' + this.isActivePath('/catering')}>
-                Catering
+                CATERING
               </button>
             </LinkContainer>
-            <button type="button" className="btn btn-outline-danger" onClick={this.orderOnline}>Order Online</button>
+            <button type="button"
+              className="btn btn-outline-danger"
+              onClick={this.orderOnline}>
+              ORDER ONLINE
+            </button>
           </div>
-        </div>
-      </div>
     );
   }
 
