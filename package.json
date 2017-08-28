@@ -1,6 +1,6 @@
 {
   "name": "china-chef",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Business website for China Chef in South Milwaukee, WI",
   "main": "index.html",
   "license": "MIT",
@@ -20,26 +20,25 @@
     "url": "https://github.com/setoalan/china-chef/issues"
   },
   "dependencies": {
-    "axios": "^0.16.0",
-    "body-parser": "~1.17.1",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.3",
-    "ejs": "^2.5.6",
-    "express": "~4.15.2",
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.6.8",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
     "foreman": "^2.0.0",
-    "jade": "~1.11.0",
-    "mongoose": "^4.9.3",
+    "mongoose": "^4.11.9",
     "mongoose-currency": "^0.2.0",
-    "morgan": "~1.8.1",
+    "morgan": "^1.8.2",
     "nodemon": "^1.11.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-redux": "^5.0.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
     "react-router": "^2.8.1",
-    "react-router-bootstrap": "^0.23.1",
-    "redux": "^3.6.0",
+    "react-router-bootstrap": "^0.23.3",
+    "redux": "^3.7.2",
     "redux-promise": "^0.5.3",
-    "serve-favicon": "~2.4.2"
+    "serve-favicon": "^2.4.3"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
