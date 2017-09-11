@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
 import { LinkContainer } from 'react-router-bootstrap';
 
 import '../styles/header.css';
@@ -22,17 +21,16 @@ class Header extends Component {
 
   render() {
     return (
-      <nav>
-        <ul className="nav nav-buttons">
-          <li className="active"><Link to={'/'}>HOME</Link></li>
-          <li><Link to={'/menu'}>MENU</Link></li>
-          <li><Link to={'/catering'}>CATERING</Link></li>
-          <li><a href="http://chef.chinesemenu.com" target="_blank">ONLINE ORDER</a></li>
-        </ul>
-      </nav>
-    );
-    return (
+      <div className="row container__header">
+        <div className="col">
           <div className="btn-group btn-flex" role="group" aria-label="header">
+            <LinkContainer to={'/'}>
+              <button
+                type="button"
+                className={'btn btn-outline-danger' + this.isActivePath('/')}>
+                HOME
+              </button>
+            </LinkContainer>
             <LinkContainer to={'/menu'}>
               <button
                 type="button"
@@ -53,6 +51,8 @@ class Header extends Component {
               ORDER ONLINE
             </button>
           </div>
+        </div>
+      </div>
     );
   }
 

@@ -1,10 +1,12 @@
 import React from 'react';
 
+import '../styles/footer.css';
+
 export default () => {
   return (
-    <div className="row">
+    <div className="row container__footer">
       <div className="col">
-        <p>© 2017 China Chef, South Milwaukee, WI</p>
+        <h6>© 2017 China Chef, South Milwaukee, WI</h6>
       </div>
     </div>
   );
