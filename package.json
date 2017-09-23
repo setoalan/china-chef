@@ -1,12 +1,12 @@
 {
   "name": "china-chef",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Business website for China Chef in South Milwaukee, WI",
   "main": "index.html",
   "license": "MIT",
   "author": "Alan Seto <alantseto@gmail.com>",
   "scripts": {
-    "start": "nf start -p 3001",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
@@ -20,26 +20,16 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
-    "body-parser": "^1.17.2",
-    "cookie-parser": "^1.4.3",
-    "debug": "^2.6.8",
-    "ejs": "^2.5.7",
-    "express": "^4.15.4",
-    "foreman": "^2.0.0",
-    "mongoose": "^4.11.9",
-    "mongoose-currency": "^0.2.0",
-    "morgan": "^1.8.2",
-    "nodemon": "^1.11.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
-    "react-router": "^2.8.1",
-    "react-router-bootstrap": "^0.23.3",
+    "react-router": "^4.2.0",
+    "react-router-bootstrap": "^0.24.4",
+    "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
-    "redux-promise": "^0.5.3",
-    "serve-favicon": "^2.4.3"
+    "redux-promise": "^0.5.3"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5"
+    "react-scripts": "1.0.13"
   }
 }

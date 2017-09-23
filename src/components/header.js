@@ -9,6 +9,7 @@ class Header extends Component {
     super(props);
 
     this.orderOnline = this.orderOnline.bind(this);
+    console.log(props);
   }
 
   isActivePath(path) {
@@ -21,27 +22,30 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="row container__header">
+      <div className="container__header row">
         <div className="col">
           <div className="btn-group btn-flex" role="group" aria-label="header">
             <LinkContainer to={'/'}>
               <button
                 type="button"
-                className={'btn btn-outline-danger' + this.isActivePath('/')}>
+                className={'btn btn-outline-danger'}>
+                {/* className={'btn btn-outline-danger' + this.isActivePath('/')}> */}
                 HOME
               </button>
             </LinkContainer>
             <LinkContainer to={'/menu'}>
               <button
                 type="button"
-                className={'btn btn-outline-danger' + this.isActivePath('/menu')}>
+                className={'btn btn-outline-danger'}>
+                {/* className={'btn btn-outline-danger' + this.isActivePath('/menu')}> */}
                 MENU
               </button>
             </LinkContainer>
             <LinkContainer to={'/catering'}>
               <button
                 type="button"
-                className={'btn btn-outline-danger' + this.isActivePath('/catering')}>
+                className={'btn btn-outline-danger'}>
+                {/* className={'btn btn-outline-danger' + this.isActivePath('/catering')}> */}
                 CATERING
               </button>
             </LinkContainer>

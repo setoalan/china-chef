@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'China One';
-  src: url('../../public/assets/china-one.ttf');
+  src: url('./assets/china-one.ttf');
 }
 
 .container__home {
