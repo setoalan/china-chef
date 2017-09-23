@@ -35,7 +35,9 @@ app.use((req, res, next) => {
 
 app.use('/api', index);
 
-mongoose.connect(process.env.DB_URL);
+mongoose.connect(process.env.DB_URL, {
+  useMongoClient: true
+});
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
