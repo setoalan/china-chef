@@ -25,11 +25,11 @@ class Header extends Component {
       <div className="container__header row">
         <div className="col">
           <div className="btn-group btn-flex" role="group" aria-label="header">
-            <LinkContainer to={'/'}>
+            {/* <LinkContainer to={'/'}>
               <button
                 type="button"
                 className={'btn btn-outline-danger'}>
-                {/* className={'btn btn-outline-danger' + this.isActivePath('/')}> */}
+                className={'btn btn-outline-danger' + this.isActivePath('/')}>
                 HOME
               </button>
             </LinkContainer>
@@ -37,7 +37,7 @@ class Header extends Component {
               <button
                 type="button"
                 className={'btn btn-outline-danger'}>
-                {/* className={'btn btn-outline-danger' + this.isActivePath('/menu')}> */}
+                className={'btn btn-outline-danger' + this.isActivePath('/menu')}>
                 MENU
               </button>
             </LinkContainer>
@@ -45,10 +45,10 @@ class Header extends Component {
               <button
                 type="button"
                 className={'btn btn-outline-danger'}>
-                {/* className={'btn btn-outline-danger' + this.isActivePath('/catering')}> */}
+                className={'btn btn-outline-danger' + this.isActivePath('/catering')}>
                 CATERING
               </button>
-            </LinkContainer>
+            </LinkContainer> */}
             <button type="button"
               className="btn btn-outline-danger"
               onClick={this.orderOnline}>
