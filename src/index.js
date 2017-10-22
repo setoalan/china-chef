@@ -2,19 +2,31 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import { Router, browserHistory } from 'react-router';
-import promise from 'redux-promise';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+import Header from './components/header';
+import Menu from './components/menu';
+import Catering from './components/catering';
+import Home from './components/home';
+import Footer from './components/footer';
 
 import reducers from './reducers';
-import routes from './routes';
 
-const createStoreWithMiddleware = applyMiddleware(
-  promise
-)(createStore);
+const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <Router history={browserHistory} routes={routes} />
+    <BrowserRouter>
+      <div>
+        <Header />
+        <Switch>
+          <Route path="/menu" component={Menu} />
+          <Route path="/catering" component={Catering} />
+          <Route path="/" component={Home} />
+        </Switch>
+        <Footer />
+      </div>
+    </BrowserRouter>
   </Provider>,
-  document.getElementById('content')
+  document.getElementById('root')
 );

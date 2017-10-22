@@ -18,7 +18,7 @@ class Home extends Component {
             <h2 className="header__slogan">LET THE FOOD TALK!</h2>
           </div>
         </div>
-        <div className="row">
+        <div style={{display: 'none'}} className="row">
           <div className="col">
             <div className="alert block__special-event" role="alert">
               <strong>Special Event</strong>
@@ -28,8 +28,8 @@ class Home extends Component {
         <div className="row">
           <div className="col-lg-4 col-md-6 container__column">
             <div className="card">
-              <div className="card-block">
-                <h3 className="card-title">HOURS</h3>
+              <div className="card-body">
+                <h4 className="card-title">HOURS</h4>
                 <p className="card-text">
                   Mon - Thu: 11 am — 9:30 pm<br />
                   Fri: 11 am — 10 pm<br />
@@ -41,8 +41,8 @@ class Home extends Component {
           </div>
           <div className="col-lg-4 col-md-6 container__column">
             <div className="card">
-              <div className="card-block">
-                <h3 className="card-title">LUNCH BUFFET</h3>
+              <div className="card-body">
+                <h4 className="card-title">LUNCH BUFFET</h4>
                 <p className="card-text">
                   Mon - Fri: 11 am — 2 pm<br />
                   Sat: 11:30 am — 2 pm
@@ -50,10 +50,10 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 container__column">
+          <div className="col-lg-4 col-md-12 container__column">
             <div className="card">
-              <div className="card-block">
-                <h3 className="card-title">WE DELIVER</h3>
+              <div className="card-body">
+                <h4 className="card-title">WE DELIVER</h4>
                 <p className="card-text">
                   South Milwaukee<br />
                   Oak Creek<br />

@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'China One';
-  src: url('../../public/assets/china-one.ttf');
+  src: url('./assets/china-one.ttf');
 }
 
 .container__home {
@@ -46,4 +46,18 @@
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 768px) {
+  .header__main {
+    font-size: 64px;
+  }
+
+  .header__info {
+    font-size: 24px;
+  }
+
+  .header__slogan {
+    font-size: 32px;
+  }
 }

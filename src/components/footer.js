@@ -4,7 +4,7 @@ import '../styles/footer.css';
 
 export default () => {
   return (
-    <div className="row container__footer">
+    <div className="container__footer row">
       <div className="col">
         <h6>© 2017 China Chef, South Milwaukee, WI</h6>
       </div>
