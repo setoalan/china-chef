@@ -5,7 +5,7 @@
   "main": "index.html",
   "license": "MIT",
   "author": "Alan Seto <alantseto@gmail.com>",
-  "homepage": "http://setoalan.github.io/china-chef",
+  "homepage": "http://smchinachef.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
