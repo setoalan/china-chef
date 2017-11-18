@@ -18,10 +18,10 @@ class Home extends Component {
             <h2 className="header__slogan">LET THE FOOD TALK!</h2>
           </div>
         </div>
-        <div style={{display: 'none'}} className="row">
+        <div className="row">
           <div className="col">
             <div className="alert block__special-event" role="alert">
-              <strong>Special Event</strong>
+              <strong>Closed Thanksgiving Day</strong>
             </div>
           </div>
         </div>
