@@ -21,7 +21,9 @@ class Home extends Component {
         <div className="row">
           <div className="col">
             <div className="alert block__special-event" role="alert">
-              <strong>Closed Thanksgiving Day</strong>
+              <strong>Christmas Eve Buffet 12 pm - 8 pm</strong><br />
+              <strong>Closed Christmas Day</strong><br />
+              <strong>New Year's Eve Buffet 12 pm - 8 pm</strong>
             </div>
           </div>
         </div>
