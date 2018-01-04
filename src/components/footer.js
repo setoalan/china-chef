@@ -6,7 +6,7 @@ export default () => {
   return (
     <div className="container__footer row">
       <div className="col">
-        <h6>© 2017 China Chef, South Milwaukee, WI</h6>
+        <h6>© 2018 China Chef, South Milwaukee, WI</h6>
       </div>
     </div>
   );
