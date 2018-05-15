@@ -18,13 +18,13 @@ class Home extends Component {
             <h2 className="header__slogan">LET THE FOOD TALK!</h2>
           </div>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div className="col">
             <div className="alert block__special-event" role="alert">
-              <strong>Mother's Day Buffet 5/13 from 12 pm - 8 pm</strong>
+              <strong></strong>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="row">
           <div className="col-lg-4 col-md-6 container__column">
             <div className="card">
