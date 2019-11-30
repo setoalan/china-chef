@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.0bf8aeb9.chunk.css",
-    "main.js": "/static/js/main.cb4a0ddc.chunk.js",
-    "main.js.map": "/static/js/main.cb4a0ddc.chunk.js.map",
+    "main.js": "/static/js/main.bc3fb4d7.chunk.js",
+    "main.js.map": "/static/js/main.bc3fb4d7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c1d0240d.js",
     "runtime-main.js.map": "/static/js/runtime-main.c1d0240d.js.map",
     "static/js/2.e3564ab0.chunk.js": "/static/js/2.e3564ab0.chunk.js",
     "static/js/2.e3564ab0.chunk.js.map": "/static/js/2.e3564ab0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b4937979c6ee63f37bd25aa4636249b2.js": "/precache-manifest.b4937979c6ee63f37bd25aa4636249b2.js",
+    "precache-manifest.c93d1537827beaa0dac6753a0537f10f.js": "/precache-manifest.c93d1537827beaa0dac6753a0537f10f.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.0bf8aeb9.chunk.css.map": "/static/css/main.0bf8aeb9.chunk.css.map",
     "static/media/home.css": "/static/media/china-one.f40a7707.ttf"
