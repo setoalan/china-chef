@@ -1,7 +1,7 @@
 {
   "name": "china-chef",
   "version": "1.0.0",
-  "description": "Business website for China Chef in South Milwaukee, WI",
+  "description": "Business website for China Chef located in South Milwaukee, WI",
   "main": "index.html",
   "license": "MIT",
   "author": "Alan Seto <alantseto@gmail.com>",
@@ -34,6 +34,18 @@
   },
   "devDependencies": {
     "gh-pages": "^2.1.1",
-    "react-scripts": "^3.1.2"
+    "react-scripts": "^3.4.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
