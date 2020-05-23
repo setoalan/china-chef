@@ -5,7 +5,6 @@ import { LinkContainer } from 'react-router-bootstrap';
 import '../styles/header.css';
 
 class Header extends Component {
-
   constructor(props) {
     super(props);
 
@@ -14,7 +13,7 @@ class Header extends Component {
   }
 
   isActivePath(path) {
-    return (this.props.location.pathname === path) ? ' active' : '';
+    return this.props.location.pathname === path ? ' active' : '';
   }
 
   orderOnline() {
@@ -23,9 +22,9 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="container__header row">
-        <div className="col">
-          <div className="btn-group btn-flex" role="group" aria-label="header">
+      <div className='container__header row'>
+        <div className='col'>
+          <div className='btn-group btn-flex' role='group' aria-label='header'>
             {/* <LinkContainer to={'/'}>
               <button
                 type="button"
@@ -50,9 +49,11 @@ class Header extends Component {
                 CATERING
               </button>
             </LinkContainer> */}
-            <button type="button"
-              className="btn btn-outline-danger"
-              onClick={this.orderOnline}>
+            <button
+              type='button'
+              className='btn btn-outline-danger'
+              onClick={this.orderOnline}
+            >
               ORDER ONLINE
             </button>
           </div>
@@ -60,7 +61,6 @@ class Header extends Component {
       </div>
     );
   }
-
 }
 
 export default Header;
