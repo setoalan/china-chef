@@ -1,6 +1,6 @@
 # china-chef
 
-Business website for China Chef restaurant in South Milwaukee, WI.
+Business website for China Chef restaurant located in South Milwaukee, WI.
 
 ## License
 

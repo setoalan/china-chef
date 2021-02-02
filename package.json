@@ -2,24 +2,33 @@
   "name": "china-chef",
   "version": "1.0.0",
   "description": "Business website for China Chef located in South Milwaukee, WI",
-  "main": "index.html",
-  "license": "MIT",
-  "author": "Alan Seto <alantseto@gmail.com>",
   "homepage": "http://smchinachef.com",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/setoalan/china-chef.git"
   },
-  "bugs": {
-    "url": "https://github.com/setoalan/china-chef/issues"
+  "license": "MIT",
+  "author": "Alan Seto <alantseto@gmail.com> (https://alanseto.com)",
+  "main": "index.html",
+  "scripts": {
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "test": "react-scripts test --env=jsdom"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -35,17 +44,5 @@
   "devDependencies": {
     "gh-pages": "^2.1.1",
     "react-scripts": "^3.4.1"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
