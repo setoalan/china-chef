@@ -6,6 +6,11 @@ body {
   background-size: auto 100%;
 }
 
+h6 {
+  text-align: center;
+  color: #fff;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -14,7 +19,100 @@ body {
   justify-content: space-between;
 }
 
-.block__special-event {
+.block-special-event {
   max-width: 576px;
   margin: 0 auto 1rem;
+}
+
+.container-header {
+  margin-bottom: 64px;
+}
+
+.btn {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 2px rgb(0, 0, 0);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    font-size: 32px;
+  }
+}
+
+@font-face {
+  font-family: 'China One';
+  src: url('../assets/china-one.ttf');
+}
+
+.container-home {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.header-main {
+  font-family: 'China One', Arial, sans-serif;
+  font-size: 96px;
+  color: #d9534f;
+}
+
+.header-info {
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+.header-info > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-slogan {
+  font-size: 48px;
+  margin-bottom: 32px;
+  color: #d9534f;
+}
+
+.block-special-event {
+  color: #fff;
+  border-color: #c33433;
+  background-color: #d9534f;
+}
+
+.container-column {
+  margin-bottom: 16px;
+}
+
+.card {
+  height: 100%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 768px) {
+  .header-main {
+    font-size: 64px;
+  }
+
+  .header-info {
+    font-size: 24px;
+  }
+
+  .header-slogan {
+    font-size: 32px;
+  }
+}
+
+.container-footer {
+  margin-top: 64px;
 }
