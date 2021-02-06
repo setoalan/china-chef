@@ -6,6 +6,11 @@ body {
   background-size: auto 100%;
 }
 
+h6 {
+  text-align: center;
+  color: #fff;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -14,12 +19,12 @@ body {
   justify-content: space-between;
 }
 
-.block__special-event {
+.block-special-event {
   max-width: 576px;
   margin: 0 auto 1rem;
 }
 
-.container__header {
+.container-header {
   margin-bottom: 64px;
 }
 
@@ -49,41 +54,41 @@ body {
   src: url('../assets/china-one.ttf');
 }
 
-.container__home {
+.container-home {
   width: 100%;
   text-align: center;
   color: #fff;
 }
 
-.header__main {
+.header-main {
   font-family: 'China One', Arial, sans-serif;
   font-size: 96px;
   color: #d9534f;
 }
 
-.header__info {
+.header-info {
   font-size: 32px;
   line-height: 1.25;
 }
 
-.header__info > a {
+.header-info > a {
   text-decoration: none;
   color: #fff;
 }
 
-.header__slogan {
+.header-slogan {
   font-size: 48px;
   margin-bottom: 32px;
   color: #d9534f;
 }
 
-.block__special-event {
+.block-special-event {
   color: #fff;
   border-color: #c33433;
   background-color: #d9534f;
 }
 
-.container__column {
+.container-column {
   margin-bottom: 16px;
 }
 
@@ -95,24 +100,19 @@ body {
 }
 
 @media (max-width: 768px) {
-  .header__main {
+  .header-main {
     font-size: 64px;
   }
 
-  .header__info {
+  .header-info {
     font-size: 24px;
   }
 
-  .header__slogan {
+  .header-slogan {
     font-size: 32px;
   }
 }
 
-h6 {
-  text-align: center;
-  color: #fff;
-}
-
-.container__footer {
+.container-footer {
   margin-top: 64px;
 }
