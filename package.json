@@ -11,33 +11,10 @@
   "author": "Alan Seto <alantseto@gmail.com> (https://alanseto.com)",
   "main": "index.html",
   "scripts": {
-    "build": "react-scripts build",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d public",
-    "eject": "react-scripts eject",
-    "start": "react-scripts start",
-    "test": "react-scripts test --env=jsdom"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-router-bootstrap": "^0.24.4",
-    "react-router-dom": "^4.2.2"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1",
-    "react-scripts": "^3.4.1"
+    "gh-pages": "^2.1.1"
   }
 }
