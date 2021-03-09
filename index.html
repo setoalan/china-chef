@@ -16,7 +16,7 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root" class="container">
+    <div class="container">
       <div class="container-header row">
         <div class="col">
           <div class="btn-group btn-flex" role="group" aria-label="header">
@@ -89,10 +89,13 @@
       </div>
       <div class="container-footer row">
         <div class="col">
-          <h6>© 2021 China Chef, South Milwaukee, WI</h6>
+          <p>&copy; <span id="currentYear">x</span> China Chef, South Milwaukee, WI</p>
         </div>
       </div>
     </div>
+    <script>
+      document.getElementById('currentYear').innerHTML = new Date().getFullYear();
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

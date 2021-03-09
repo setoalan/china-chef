@@ -3,31 +3,12 @@
   src: url('../assets/china-one.ttf');
 }
 
-@media (max-width: 768px) {
-  .header-title {
-    font-size: 64px;
-  }
-
-  .header-content {
-    font-size: 24px;
-  }
-
-  .header-byline {
-    font-size: 32px;
-  }
-}
-
 body {
   font-family: 'Noto Serif', serif;
   margin: 0;
   padding: 0;
   background: url('../assets/bamboo-background.jpg') fixed;
   background-size: auto 100%;
-}
-
-h6 {
-  text-align: center;
-  color: #fff;
 }
 
 .container {
@@ -83,7 +64,7 @@ h6 {
 }
 
 .header-content {
-  font-size: 32px;
+  font-size: 24px;
   line-height: 1.25;
 }
 
@@ -93,7 +74,7 @@ h6 {
 }
 
 .header-byline {
-  font-size: 48px;
+  font-size: 32px;
   margin-bottom: 32px;
   color: #d9534f;
 }
@@ -107,4 +88,6 @@ h6 {
 
 .container-footer {
   margin-top: 64px;
+  text-align: center;
+  color: #fff;
 }
