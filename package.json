@@ -8,7 +8,7 @@
     "url": "git+https://github.com/setoalan/china-chef.git"
   },
   "license": "MIT",
-  "author": "Alan Seto <alantseto@gmail.com> (https://alanseto.com)",
+  "author": "Alan Seto <alantseto@gmail.com>",
   "scripts": {
     "deploy": "gh-pages -d public",
     "dev": "node .",
