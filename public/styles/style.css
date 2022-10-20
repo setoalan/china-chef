@@ -103,12 +103,27 @@ tr {
   text-align: center;
   color: #fff;
 }
+.accordion {
+  max-width: 768px;
+  margin: 0 auto;
+}
 
 .accordion-body {
   padding: 0;
 }
 
 .table {
+  margin-bottom: 0;
+}
+
+.description {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.combination-plate p {
+  font-size: 24px;
+  margin-top: 8px;
   margin-bottom: 0;
 }
 
