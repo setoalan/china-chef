@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #c33433;
+}
+
 @font-face {
   font-family: 'China One';
   src: url('../assets/china-one.ttf');
@@ -9,6 +13,15 @@ body {
   padding: 0;
   background: url('../assets/bamboo-background.jpg') fixed;
   background-size: auto 100%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+a:hover {
+  color: #d9534f;
 }
 
 th {
@@ -65,13 +78,13 @@ tr {
   margin: 0 auto 1rem;
   color: #fff;
   border-color: #c33433;
-  background-color: #d9534f;
+  background-color: var(--primary-color);
 }
 
 .header-title {
   font-family: 'China One', Arial, sans-serif;
   font-size: 96px;
-  color: #d9534f;
+  color: var(--primary-color);
 }
 
 .header-content {
@@ -88,7 +101,7 @@ tr {
 .header-byline {
   font-size: 32px;
   margin-bottom: 32px;
-  color: #d9534f;
+  color: var(--primary-color);
 }
 
 .card {
@@ -103,9 +116,22 @@ tr {
   text-align: center;
   color: #fff;
 }
+
 .accordion {
   max-width: 768px;
   margin: 0 auto;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed),
+.accordion-button:focus {
+  color: #ffffff;
+  text-shadow: 0 1px 0 black;
+  background-color: var(--primary-color);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon);
 }
 
 .accordion-body {
