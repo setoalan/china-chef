@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #c33433;
+}
+
 @font-face {
   font-family: 'China One';
   src: url('../assets/china-one.ttf');
@@ -11,12 +15,32 @@ body {
   background-size: auto 100%;
 }
 
+a,
+a:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+a:hover {
+  color: #d9534f;
+}
+
+th {
+  width: 35%;
+}
+
+tr {
+  width: 15%;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   padding-top: 32px;
-  text-shadow: 0 1px 2px rgb(0, 0, 0);
   justify-content: space-between;
+}
+
+.header {
+  text-shadow: 0 1px 2px rgb(0, 0, 0);
 }
 
 .container-header {
@@ -54,18 +78,19 @@ body {
   margin: 0 auto 1rem;
   color: #fff;
   border-color: #c33433;
-  background-color: #d9534f;
+  background-color: var(--primary-color);
 }
 
 .header-title {
   font-family: 'China One', Arial, sans-serif;
   font-size: 96px;
-  color: #d9534f;
+  color: var(--primary-color);
 }
 
 .header-content {
   font-size: 24px;
   line-height: 1.25;
+  color: #ffffff;
 }
 
 .header-content > a {
@@ -76,7 +101,7 @@ body {
 .header-byline {
   font-size: 32px;
   margin-bottom: 32px;
-  color: #d9534f;
+  color: var(--primary-color);
 }
 
 .card {
@@ -90,4 +115,45 @@ body {
   margin-top: 64px;
   text-align: center;
   color: #fff;
+}
+
+.accordion {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed),
+.accordion-button:focus {
+  color: #ffffff;
+  text-shadow: 0 1px 0 black;
+  background-color: var(--primary-color);
+}
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+  padding: 0;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.description {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.combination-plate p {
+  font-size: 24px;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.combination-plate th {
+  width: 25%;
 }
