@@ -154,6 +154,16 @@ tr {
   margin-bottom: 0;
 }
 
+.combination-plate > tr > th {
+  font-size: 12px;
+}
+
+@media (min-width: 576px) {
+  .combination-plate > tr > th {
+    font-size: 16px;
+  }
+}
+
 .combination-plate th {
   width: 25%;
 }
