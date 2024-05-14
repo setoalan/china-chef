@@ -1,19 +1,17 @@
 {
   "name": "china-chef",
   "version": "1.0.0",
-  "description": "Business website for China Chef located in South Milwaukee, WI",
+  "private": true,
   "homepage": "https://smchinachef.com",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/setoalan/china-chef.git"
   },
-  "license": "MIT",
   "author": "Alan Seto <hello@alanseto.com>",
   "scripts": {
     "deploy": "gh-pages -d public",
     "dev": "node .",
-    "start": "open public/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "open public/index.html"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1",
