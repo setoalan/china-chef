@@ -2,7 +2,7 @@
   --primary: #c33433;
   --black: #000000;
   --white: #ffffff;
-  --background-color: rgba(0, 0, 0, 0.2);
+  --background-color: rgba(0, 0, 0, 0.3);
   --box-shadow: 0 2px 4px var(--background-color);
   --text-shadow: 0 1px 2px var(--black);
 }
@@ -27,6 +27,8 @@ a:visited {
 
 h1,
 h2,
+h3,
+h4,
 p,
 button {
   text-shadow: var(--text-shadow);
@@ -40,10 +42,16 @@ td {
   width: 15%;
 }
 
+.col-md-12 {
+  margin-bottom: 24px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   padding-top: 32px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .btn {
@@ -104,6 +112,7 @@ td {
 
 .container-footer {
   margin-top: 64px;
+  margin-bottom: 64px;
   text-align: center;
   color: var(--white);
 }
